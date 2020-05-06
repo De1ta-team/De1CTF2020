@@ -1,8 +1,8 @@
 ## check in
 **Examination of this Challenge**  
 
-1.`.htaccess`Utilization of documents
-2.The use of CGI in Linux
+1.`.htaccess`Utilization of documents  
+2.The use of CGI in Linux  
 Some points to pay attention to when doing this Challenge:
 - MIME(`content-type`)Field verification
 - Suffix blacklist verification(`/ph|ml|js|cg/`)
@@ -41,7 +41,7 @@ hp .xx
 ```
 **Unexpected solution 2**  
 
-Leverage server status information
+Leverage server status information  
 
 .htaccess:
 ```
@@ -53,9 +53,9 @@ Upload files and access your own upload directory,You can see the server status 
 ## check in
 **本题考查点**：  
 
-1.`.htaccess`文件的利用
+1.`.htaccess`文件的利用  
 2.linux环境下CGI的利用
-文件上传时注意的几点:
+文件上传时注意的几点:  
 - MIME(content-type字段)校验
 - 后缀名黑名单校验(`/ph|ml|js|cg/`)
 - 文件内容校验
@@ -79,13 +79,13 @@ echo ""
 
 cat /flag
 ```
-注：这里讲下一个小坑，linux中cgi比较严格(2333333)
+注：这里讲下一个小坑，linux中cgi比较严格(2333333)  
 上传后发现状态码500，无法解析我们bash文件。因为我们的目标站点是linux环境，如果我们用(windows等)本地编辑器编写上传时编码不一致导致无法解析，所以我们可以在linux环境中编写并导出再上传。
 
 **非预期解 1**  
 
 惨痛的教训 ！！！
-出题时坑有点多，所以忘记了[2019xnuca中的ezphp](https://github.com/NeSE-Team/OurChallenges/tree/master/XNUCA2019Qualifier/Web/Ezphp),所以许多师傅就利用`\`绕过了waf! (wtclll!!)
+出题时坑有点多，所以忘记了[2019xnuca中的ezphp](https://github.com/NeSE-Team/OurChallenges/tree/master/XNUCA2019Qualifier/Web/Ezphp),所以许多师傅就利用`\`绕过了waf! (wtclll!!)  
 .htaccess:
 ```
 AddType application/x-httpd-p\
@@ -97,7 +97,7 @@ hp .xx
 ```
 **非预期解 2**  
 
-利用apache的服务器状态信息(默认关闭)
+利用apache的服务器状态信息(默认关闭)  
 .htaccess:
 ```
 SetHandler server-status
