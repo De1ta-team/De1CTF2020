@@ -1,0 +1,1 @@
+flag = "De1CTF{23bdd7eb-844d-458c-bfae-9f8a5964865c}"
