@@ -1,0 +1,15 @@
+version: '2.3'
+services:
+ php:
+   image: php:7.4.2-apache
+   pids_limit: 12233
+   ports:
+    - "8848:80"
+   volumes:
+    - ./www:/var/www/html
+    - ./mpm_prefork.conf:/etc/apache2/mods-available/mpm_prefork.conf
+    - ./libphp7.so:/usr/lib/apache2/modules/libphp7.so
+    - ./evalfilter.so:/usr/local/lib/php/extensions/debug-non-zts-20190902/evalfilter.so
+    - ./php.ini:/usr/local/php/etc/php.ini
+    - ./flag:/flag
+    - ./readflag:/readflag
