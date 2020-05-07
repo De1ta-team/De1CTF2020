@@ -11,7 +11,7 @@ This chall is mainly inspired by CVE-2017-13311, etc.
 
 You can read this article https://weekly-geekly.github.io/articles/457558/index.html, which details the cause of similar vulnerabilities
 
-In the apk, it first read the Base64 string, then base64deocde the data and put it as a Bundle in the broadcast, send it to Receiver2
+In the apk, it first read the Base64 string, then base64decode the data and put it as a Bundle in the broadcast, send it to Receiver2
 Receiver2 receives the broadcast, takes out the Bundle, and then takes out a string which key is "command" from the bundle, and determines whether it is getflag,
 If not, the Receiver2 will continue to broadcast the data to Receiver3
 Receiver3 receives the broadcast, takes out the Bundle, check whether the command is getflag, if so, it outputs "Congratulation"

@@ -9,9 +9,9 @@
 主要的漏洞点是关于序列化与反序列化不匹配的漏洞
 这道题主要是由CVE-2017-13311等启发而成
 
-可以阅读https://xz.aliyun.com/t/2364这篇文章，里面详细的说明了类似漏洞的原理
+可以阅读https://xz.aliyun.com/t/2364, 这篇文章，里面详细的说明了类似漏洞的原理
 
-在apk中，首先读取了Base64字符串，base64deocdeo之后将其作为一个Bundle放到广播中，发送给Receiver2
+在apk中，首先读取了Base64字符串，base64decode之后将其作为一个Bundle放到广播中，发送给Receiver2
 Receiver2接收到广播，取出Bundle，再从Bundle里面取出key为command的值，判断是否为getflag，不是的话就可以继续广播到Receiver3
 Receiver3接收到广播，取出Bundle，判断command是否为getflag，是的话就输出Congratulation
 
