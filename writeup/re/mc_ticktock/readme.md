@@ -1,5 +1,7 @@
 ## reverse - mc_ticktock
 
+[Source Code](https://github.com/impakho/de1ctf-mc_challs)
+
 Previously on the challenge, we got a hidden command `/MC2020-DEBUG-VIEW:-)`. We could read player's log file by their's UUID. Of course, it's a classical directory traversal attack here to read any file on the challenge environment.
 
 Let's read the service binary file `../../../../../../../proc/self/exe`, and reverse it. (`go run exp.go types.go crypt.go -s1`)
@@ -55,6 +57,8 @@ To get the flag, try `go run exp.go types.go crypt.go -s3`.
 `De1CTF{t1Ck-t0ck_Tlck-1ocK_MC2O20_:)SM4}`
 
 ## reverse - mc_ticktock
+
+[Source Code](https://github.com/impakho/de1ctf-mc_challs)
 
 上一题提到的 `/MC2020-DEBUG-VIEW:-)` 隐藏命令，是管理员用于读取指定 `uuid` 玩家 `log日志文件` 的命令。
 

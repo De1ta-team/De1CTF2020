@@ -1,5 +1,7 @@
 ## web - mc_logclient
 
+[Source Code](https://github.com/impakho/de1ctf-mc_challs)
+
 It's a `minecraft log web client`.
 
 The `chatting content` of players are stored in `logs/` with their's UUID. The `logs/` is mounted as read-only directory.
@@ -23,6 +25,8 @@ More details, have a check on exploit file `exp.go`.
 `De1CTF{MC_L0g_C1ieNt-t0-S1mPl3_S2Tl~}`
 
 ## web - mc_logclient
+
+[Source Code](https://github.com/impakho/de1ctf-mc_challs)
 
 这是一个 `minecraft log web client`。可以用于读取所有用户的日志。
 

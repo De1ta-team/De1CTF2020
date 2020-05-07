@@ -1,5 +1,7 @@
 ## misc - mc_champion
 
+[Source Code](https://github.com/impakho/de1ctf-mc_challs)
+
 The Minecraft game is modified basing on [TyphoonMC/TyphoonLimbo](https://github.com/TyphoonMC/TyphoonLimbo).
 
 When you login to the game, you are in the Limbo World. Nothing you can do except chatting with other players. After fuzzing, it's not difficult to find out the `/help` command.
@@ -47,6 +49,8 @@ After won the game, we got the `Encoded Message`. Simply have a `Base32 Decode`.
 `De1CTF{S3cur3_UsAG3_0f-GO_Slice~}`
 
 ## misc - mc_champion
+
+[Source Code](https://github.com/impakho/de1ctf-mc_challs)
 
 此题基于轮子 [TyphoonMC/TyphoonLimbo](https://github.com/TyphoonMC/TyphoonLimbo) 魔改而来。
 
