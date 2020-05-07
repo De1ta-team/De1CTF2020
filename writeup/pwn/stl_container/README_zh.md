@@ -1,6 +1,9 @@
 ### stl_container
 [中文](./README_zh.md) [English](./README.md)
+
 [attachment](./attachment.zip)
+
+[docker](./docker.zip)
 
 这道题是关于c++ vector模板的一个漏洞
 当vector中储存的是Object的时候，erase指定下标的Object都会调用vector中最后一个Object的析构函数

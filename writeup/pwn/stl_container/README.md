@@ -1,6 +1,9 @@
 ### stl_container
 [中文](./README_zh.md) [English](./README.md)
+
 [attachment](./attachment.zip)
+
+[docker](./docker.zip)
 
 This challenge is about a bug in c ++ vector template
 When the item stored in the vector is an Object, no matter what index you want to erase will call the destructor of the last Object in the vector
